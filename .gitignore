@@ -1,0 +1,22 @@
+# AI
+MAX_TOKENS=70000
+MIN_TOKENS=256
+MAX_TOKENS_PER_MESSAGE=4096
+TIMEOUT=2000
+ 
+# Use LiteLLM
+LLM_HOST=litellm
+ 
+# LiteLLM routing
+LITELLM_MODEL_NAME=product-x-oss
+LITELLM_PROXY_API_BASE=http://genbee-litellm:4000
+ 
+# Product-X OSS backend
+PRODUCT_X_OSS_MODEL_NAME=gpt-oss:120b
+PRODUCT_X_OSS_API_BASE=http://llm.product-x.capgemini.com/v1
+PRODUCT_X_OSS_API_KEY=sk-productx-migrator-pAT5QQYv6HEJIEyI2lWmnXjbhL
+ 
+# Required by Autogen (dummy values)
+OPENAI_API_KEY=dummy
+OPENAI_MODEL_NAME=dummy
+OPENAI_API_BASE=http://dummy
